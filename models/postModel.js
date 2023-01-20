@@ -4,7 +4,7 @@ const ObjectId = Schema.ObjectId;
 
 
 const postSchema = new Schema({
-    postImage: { type: String },
+    postImage: { type: String, required : true},
     author: { type: String, required: true},
     location: { type: String, required: true},
     description: { type: String, required: true },
